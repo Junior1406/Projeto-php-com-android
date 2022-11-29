@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Bloco de notas</string>
+    <string name="titulo">Titulo</string>
+    <string name="Texto">Texto</string>
+    <string name="salvar">salvar</string>
+    <string name="data">15 junho 2020</string>
+    <string name="editar">editar</string>
+    <string name="deletar">deletar</string>
+    <string name="atualizar">atualizar</string>
+</resources>

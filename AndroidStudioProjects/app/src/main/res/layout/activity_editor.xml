@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Atividade.Editor.EditorActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <EditText
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/titulo"
+            android:inputType="textCapSentences"
+            android:textSize="25sp"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/nota"
+            android:layout_below="@+id/titulo"
+            android:layout_marginTop="20dp"
+            android:gravity="top|start"
+            android:hint="@string/Texto"
+            android:inputType="textMultiLine"
+            android:minLines="6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="Autofill" />
+
+        <com.thebluealliance.spectrum.SpectrumPalette
+            android:id="@+id/palette"
+            android:layout_below="@+id/nota"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:spectrum_colors="@array/lista_cores"
+            />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
